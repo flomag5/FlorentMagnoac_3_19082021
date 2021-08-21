@@ -1,0 +1,24 @@
+{
+  "name": "florentmagnoac_3_19082021",
+  "version": "1.0.0",
+  "description": "Ohmyfood Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flomag5/Projet-3--OhMyFood.git"
+  },
+  "keywords": [
+    "restaurants",
+    "menu"
+  ],
+  "author": "florentmagnoac",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/flomag5/Projet-3--OhMyFood/issues"
+  },
+  "homepage": "https://github.com/flomag5/Projet-3--OhMyFood#readme"
+}
