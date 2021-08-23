@@ -1,13 +1,16 @@
-body {
+main{
     font-family: 'Roboto', sans-serif;
-    color: $text-color;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.7;
 }
 
-h1{
+h1, .logo{
     font-family: 'Shrikhand', cursive; 
-    color: $text-color;
     font-weight: 700; 
-    }
+}
+
+a{
+    text-decoration: none;
+    color:$text-color;
+     &:visited {
+         color: $text-color;
+     }
+}
