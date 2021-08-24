@@ -36,12 +36,26 @@ a:visited {
   align-items: center;
 }
 .hero_button-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, #FF79DA 0%, #9356DC 51%, #FF79DA 100%);
+  cursor: pointer;
+  padding: 15px 25px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200%;
   color: white;
-  border: transparent solid;
-  padding: 15px 20px;
-  background-color: #9356DC;
   border-radius: 50px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+.hero_button-sub:hover {
+  background-position: right center;
+  background: lighten #FF79DA, 20%;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: darken rgba(0, 0, 0, 0.3), 40%;
 }
 
 .header {
@@ -89,11 +103,11 @@ a:visited {
   background: #eaeaea;
   color: #7a7a7a;
   align-items: baseline;
-  justify-items: center;
 }
 .location #icon_location {
   color: black;
   font-size: 1.2em;
+  margin-left: 4rem;
 }
 .location .search_bar {
   font-size: 1em;
@@ -102,6 +116,19 @@ a:visited {
   background: #eaeaea;
   padding: 18px 0;
   margin-left: 15px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+}
+.hero_title {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 40px 60px auto 60px;
+}
+.hero_text {
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */
