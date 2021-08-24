@@ -1,6 +1,11 @@
 body{
-    margin: 0 auto;
+    margin: 0;
+    background: #f6f6f6;
+    overflow-x: hidden;
+}
+main{
+    margin: 0;
     padding: 0;
-    width: 100vw;
-    
+    @include center-element;
+    flex-direction: column;  
 }

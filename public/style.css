@@ -1,7 +1,16 @@
 body {
-  margin: 0 auto;
+  margin: 0;
+  background: #f6f6f6;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0;
   padding: 0;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 main {
@@ -22,13 +31,16 @@ a:visited {
 }
 
 .hero_button {
-  display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+}
+.hero_button-sub {
   color: white;
-  border-radius: 25px;
+  border: transparent solid;
+  padding: 15px 20px;
+  background-color: #9356DC;
+  border-radius: 50px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,8 +85,23 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f3f3f3;
+  width: 100%;
+  background: #eaeaea;
   color: #7a7a7a;
+  align-items: baseline;
+  justify-items: center;
+}
+.location #icon_location {
+  color: black;
+  font-size: 1.2em;
+}
+.location .search_bar {
+  font-size: 1em;
+  font-weight: 700;
+  border: none;
+  background: #eaeaea;
+  padding: 18px 0;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
