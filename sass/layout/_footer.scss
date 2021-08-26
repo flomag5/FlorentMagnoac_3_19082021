@@ -1,25 +1,18 @@
-.footer a, i{
+.footer a{
     color: white;
 }
 
 .footer{
-    @include center-element;
     width: 100%;
     background-color: #353535;
-    &_bloc{
-        display: inline;
         padding: 0 20px;
-        width: 100%;
-        margin-bottom: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
         & .logo{
             font-size: 20px;
             font-weight: 500;
             padding: 20px 0;  
-        }
-        &-links{
-            display: inline-flex;
-            flex-direction: column;
-            width: auto;
         }
         &-link{
             display: inline-flex;
@@ -31,6 +24,7 @@
             }
             & i{
                 margin-right: 10px;
+                color: white;
             }
             &_title{
                 font-weight: 400;
@@ -38,4 +32,4 @@
         }
 
     }
-}
+

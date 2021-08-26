@@ -19,6 +19,9 @@
         margin-left: 15px;
         cursor: pointer;
     }
+    & :focus{
+        outline: none;
+    }
 }
 
 .hero{
@@ -35,26 +38,27 @@
 }
 
 /*-- user notice guidelines --*/
+
 .user_notice{
-    padding: 12% 0;
+    padding: 10% 0;
     background: white;
     width: 100%;
     @include center-element;
+    flex-direction: column;
 }
 .notice{
-    display: flex;
-    flex-direction: column;
     width: 95%;
-    background-color: white;
-    padding: 0;
+    padding: 0 ;   
+    display: flex;
+    flex-direction: column ;
     &_title{
         margin: 0;
     }
     &_steps{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        margin-top: 5%;
+        width: 95%;
+        margin-top: 4%;
     }
     &_step{
         display: flex;
@@ -67,8 +71,16 @@
         padding: 10px 0;
         position: relative;
         box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.15);
+        &:hover{
+            cursor: pointer;
+            background: lighten($color: $color-primary, $amount: 33%);
+            & > .step_icon{
+                    color: $color-primary;
+            }
+        }
     }
 }
+
 .notice_step{
     .step_number{
         background-color: $color-primary;
@@ -82,7 +94,7 @@
     .step_icon{
             color: #7e7e7e;
             font-size: 120%;
-            margin: 0 20px 0 35px;
+            margin: 0 25px 0 35px;
         }   
     .step_text{
         font-weight: 700;
@@ -129,13 +141,13 @@
             position: absolute;
             background-color: $color-tertiary;
             top: 20px; right: 10px;
-            & p{
+            
                 color: #008766;
                 font-size: 0.9em;
                 font-weight: 700;
                 padding: 6px 13px;
                 margin: 0;
-            }
+          
         }
         &:hover {
             transition: 0.4s;
@@ -155,14 +167,13 @@
     border-radius: 0 0 20px 20px;
     &-info{
         margin-left: 15px;
-        & > :first-child{
-            font-size: 1.1em;
-             font-weight: 700;
-            padding-bottom: 5px;}
-        }
+        line-height: 5px;
+    }
     &-heart{
         margin-right: 30px;
         font-size: 150%;
     }
     
 }
+
+/*-- responsive --*/

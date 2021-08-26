@@ -72,46 +72,37 @@ a:visited {
   align-content: center;
 }
 
-.footer a, i {
+.footer a {
   color: white;
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   background-color: #353535;
-}
-.footer_bloc {
-  display: inline;
   padding: 0 20px;
-  width: 100%;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
-.footer_bloc .logo {
+.footer .logo {
   font-size: 20px;
   font-weight: 500;
   padding: 20px 0;
 }
-.footer_bloc-links {
-  display: inline-flex;
-  flex-direction: column;
-  width: auto;
-}
-.footer_bloc-link {
+.footer-link {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   line-height: 0.1em;
 }
-.footer_bloc-link:hover {
+.footer-link:hover {
   text-decoration: underline;
 }
-.footer_bloc-link i {
+.footer-link i {
   margin-right: 10px;
+  color: white;
 }
-.footer_bloc-link_title {
+.footer-link_title {
   font-weight: 400;
 }
 
@@ -139,6 +130,9 @@ a:visited {
   margin-left: 15px;
   cursor: pointer;
 }
+.location :focus {
+  outline: none;
+}
 
 .hero {
   text-align: center;
@@ -155,29 +149,29 @@ a:visited {
 
 /*-- user notice guidelines --*/
 .user_notice {
-  padding: 12% 0;
+  padding: 10% 0;
   background: white;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .notice {
+  width: 95%;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  width: 95%;
-  background-color: white;
-  padding: 0;
 }
 .notice_title {
   margin: 0;
 }
 .notice_steps {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin-top: 5%;
+  width: 95%;
+  margin-top: 4%;
 }
 .notice_step {
   display: flex;
@@ -190,6 +184,13 @@ a:visited {
   padding: 10px 0;
   position: relative;
   box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.15);
+}
+.notice_step:hover {
+  cursor: pointer;
+  background: #ece1f9;
+}
+.notice_step:hover > .step_icon {
+  color: #9356DC;
 }
 
 .notice_step .step_number {
@@ -204,7 +205,7 @@ a:visited {
 .notice_step .step_icon {
   color: #7e7e7e;
   font-size: 120%;
-  margin: 0 20px 0 35px;
+  margin: 0 25px 0 35px;
 }
 .notice_step .step_text {
   font-weight: 700;
@@ -254,8 +255,6 @@ a:visited {
   background-color: #99E2D0;
   top: 20px;
   right: 10px;
-}
-.restaurant_item_new p {
   color: #008766;
   font-size: 0.9em;
   font-weight: 700;
@@ -279,15 +278,13 @@ a:visited {
 }
 .restaurant_bloc-info {
   margin-left: 15px;
-}
-.restaurant_bloc-info > :first-child {
-  font-size: 1.1em;
-  font-weight: 700;
-  padding-bottom: 5px;
+  line-height: 5px;
 }
 .restaurant_bloc-heart {
   margin-right: 30px;
   font-size: 150%;
 }
+
+/*-- responsive --*/
 
 /*# sourceMappingURL=style.css.map */
