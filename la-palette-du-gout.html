@@ -7,7 +7,7 @@
     <title>La palette du goût</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="styles/style_menu.css">
+    <link rel="stylesheet" type="text/css" href="./public/style.css">
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!-- Google Fonts -->
@@ -19,15 +19,15 @@
     <!-- header -->
     <header>
         <div class="header">
-            <div class="icon_back"><a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="header_icon"><a href="../index.html"><i class="fas fa-arrow-left"></i></a>
             </div>
             <a href="../index.html"><h1 class="header_logo">ohmyfood</h1></a>
         </div>
     </header>
 
     <!-- top image -->
-        <div class="top_img">
-            <img class="img" src="../images/restaurants/restaurant_1.jpg" alt="La palette du goût">
+        <div class="image">
+            <img class="image_img" src="./images/restaurants/restaurant01.jpg" alt="La palette du goût">
         </div>
 
     <!-- menu -->
@@ -38,8 +38,8 @@
                     <i class="far fa-heart"></i>
                 </div>
             </div>
-            <div class="menu_blocs">
-                <div class="menu_bloc">
+            <div class="menu_bloc">
+                <div class="menu_bloc_card">
                     <div class="menu_bloc_title"><h3>Entrées</h3></div>
                         <div class="menu_dishes">
                             <div class="dish_info">
@@ -72,7 +72,7 @@
                             <i class="fas fa-check-circle"></i>
                         </div>
                 </div>
-                <div class="menu_bloc">
+                <div class="menu_bloc_card">
                     <div class="menu_bloc_title"><h3>Plats</h3></div>
                         <div class="menu_dishes">
                             <div class="dish_info">
@@ -105,7 +105,7 @@
                             <i class="fas fa-check-circle"></i>
                         </div>
                 </div>
-                <div class="menu_bloc">
+                <div class="menu_bloc_card">
                     <div class="menu_bloc_title"><h3>Desserts</h3></div>
                         <div class="menu_dishes">
                             <div class="dish_info">
@@ -146,26 +146,21 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="footer_bloc">
-            <div class="logo"><a href="index.html">ohmyfood</a></div>
-            <div class="footer_links">
-                <div class="footer_link">
-                    <i class="fas fa-utensils"></i>
-                    <h3 class="footer_link_title">Proposer un restaurant</h3>
-                </div>
-                <div class="footer_link">
-                    <i class="fas fa-hands-helping"></i>
-                    <h3 class="footer_link_title">Devenir partenaire</h3>
-                </div>
-                <div class="footer_link">
-                    <h3 class="footer_link_title">Mentions légales</h3>
-                </div>
-                <div class="footer_link">
-                    <h3 class="footer_link_title"><a href="mailto:contact@ohmyfood.com">Contact</a></h3>
-                </div>
+        <div class="logo"><a href="index.html">ohmyfood</a></div>
+            <div class="footer-link">
+                <i class="fas fa-utensils"></i>
+                <h3 class="footer-link_title"><a href="#">Proposer un restaurant</a></h3>
             </div>
-        </div>
+            <div class="footer-link">
+                <i class="fas fa-hands-helping"></i>
+                <h3 class="footer-link_title"><a href="#">Devenir partenaire</a></h3>
+            </div>
+            <div class="footer-link"><a href="#">
+                <h3 class="footer-link_title">Mentions légales</h3></a>
+            </div>
+            <div class="footer-link">
+                <h3 class="footer-link_title"><a href="mailto:contact@ohmyfood.com">Contact</a></h3>
+            </div>
     </footer>
-    
 </body>
 </html>

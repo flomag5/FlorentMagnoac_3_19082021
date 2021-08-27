@@ -13,7 +13,7 @@ main {
   flex-direction: column;
 }
 
-main {
+main, footer {
   font-family: "Roboto", sans-serif;
 }
 
@@ -55,7 +55,97 @@ a:visited {
   background: lighten #FF79DA, 20%;
   color: #fff;
   text-decoration: none;
-  box-shadow: darken rgba(0, 0, 0, 0.3), 40%;
+  box-shadow: darken #d3d3d3, 50%;
+}
+
+.menu_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 60px 0;
+}
+.menu_button_order {
+  background-image: linear-gradient(to left, #FF79DA 0%, #9356DC 70%, #FF79DA 100%);
+  cursor: pointer;
+  padding: 18px 60px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200%;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+.menu_button_order:hover {
+  background-position: right center;
+  opacity: 0.9;
+  transition: 0.4s;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.spinner {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+.spinner .spinner_icon {
+  color: #9356DC;
+  font-size: 70px;
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  bottom: 50px;
+  right: 50px;
+  animation: spin 15s infinite;
+}
+.spinner .spinner_load {
+  width: 180px;
+  height: 180px;
+  border: 10px solid transparent;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  animation: spin 2s infinite;
+}
+.spinner .spinner_load::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #99E2D0;
+  animation: spin 5s infinite;
+}
+.spinner .spinner_load::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #FF79DA;
+  animation: spin 8s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .header {
@@ -70,6 +160,14 @@ a:visited {
 }
 .header_logo {
   align-content: center;
+}
+.header_icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  top: 40%;
+  font-size: 20px;
 }
 
 .footer a {
@@ -286,5 +384,91 @@ a:visited {
 }
 
 /*-- responsive --*/
+.image {
+  width: 100%;
+  height: 50vh;
+}
+.image_img {
+  margin-top: -80px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#menu {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  margin: -25px 0 25px 0;
+}
+#menu .menu_top {
+  position: absolute;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  top: 44%;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+}
+#menu .menu_top_title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 1.75em;
+  padding: 0 25px;
+}
+#menu .menu_top .fa-heart {
+  font-size: 25px;
+  font-weight: 100;
+  padding: 0 35px;
+}
+
+.menu_bloc {
+  display: grid;
+  grid-gap: 30px;
+  margin: 0 5%;
+}
+.menu_bloc_card {
+  display: grid;
+  grid-gap: 15px;
+}
+.menu_bloc_title h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.7em;
+  border-bottom: solid 4px #99E2D0;
+  width: 45px;
+}
+
+.menu_dishes {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 10px;
+  box-shadow: 1px 3px 10px 1px #ececec;
+  cursor: pointer;
+  line-height: 0.4em;
+}
+.menu_dishes .dish_title {
+  font-size: 1.1em;
+}
+.menu_dishes .dish_subtitle {
+  font-size: 0.92em;
+}
+.menu_dishes .dish_price {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 0.95em;
+  padding: 0 15px 10px 0;
+}
 
 /*# sourceMappingURL=style.css.map */

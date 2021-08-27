@@ -1,0 +1,86 @@
+.image{
+    width: 100%;
+    height: 50vh;
+    &_img{
+        margin-top: -80px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#menu{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    margin: -25px 0 25px 0;
+    .menu_top{
+    position: absolute;
+    display: flex;
+    @include center-element;
+    justify-content: space-between;
+    top: 44%;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+        &_title{
+            font-family: 'Shrikhand', cursive; 
+            font-weight: 500; 
+            font-size: 1.75em;
+            padding: 0 25px;
+        }
+        .fa-heart{
+            font-size: 25px;
+            font-weight: 100;
+            padding: 0 35px;
+        }
+    }  
+}
+
+.menu_bloc{
+    display: grid;
+    grid-gap: 30px;
+    margin: 0 5%;
+    &_card{
+        display: grid;
+        grid-gap: 15px;
+    }
+    &_title h3{
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1.7em;
+        border-bottom: solid 4px $color-tertiary;
+        width: 45px;
+    }
+
+}
+
+.menu_dishes{
+    position: relative;
+    overflow: hidden;
+    @include center-element;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 10px;
+    box-shadow: 1px 3px 10px 1px #ececec;
+    cursor: pointer;
+    line-height: 0.4em;
+    .dish_title{
+        font-size: 1.1em;
+    }
+    .dish_subtitle{
+        font-size: 0.92em;
+    }
+    .dish_price{
+        align-self: flex-end;
+        font-weight: 700;
+        font-size: 0.95em;
+        padding: 0 15px 10px 0;
+      }
+    }
+       
+
+
