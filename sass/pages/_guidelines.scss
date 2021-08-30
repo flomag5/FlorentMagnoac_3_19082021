@@ -1,0 +1,63 @@
+/*-- user notice guidelines --*/
+
+.user_notice{
+    padding: 10% 0;
+    background: white;
+    width: 100%;
+    @include center-element;
+    flex-direction: column;
+}
+.notice{
+    width: 95%;
+    padding: 0 ;   
+    display: flex;
+    flex-direction: column ;
+    &_title{
+        margin: 0;
+    }
+    &_steps{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-top: 4%;
+    }
+    &_step{
+        display: flex;
+        align-items: center;
+        background: #f6f6f6;
+        height: auto;
+        width: auto;
+        margin: 13px 20px;
+        border-radius: 20px;
+        padding: 10px 0;
+        position: relative;
+        box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.15);
+        &:hover{
+            cursor: pointer;
+            background: lighten($color: $color-primary, $amount: 33%);
+            & > .step_icon{
+                    color: $color-primary;
+            }
+        }
+    }
+}
+
+.notice_step{
+    .step_number{
+        background-color: $color-primary;
+        color: white;
+        position: absolute;
+        padding: 3px 8px 3px 8px;
+        border: transparent 1px;
+        border-radius: 500px;
+        transform: translateX(-50%);
+    }
+    .step_icon{
+            color: #7e7e7e;
+            font-size: 120%;
+            margin: 0 25px 0 35px;
+        }   
+    .step_text{
+        font-weight: 700;
+    }
+    }

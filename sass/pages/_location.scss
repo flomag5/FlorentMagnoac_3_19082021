@@ -1,0 +1,38 @@
+/*-- location search */
+.location{
+    @include center-element;
+    width: 100%;
+    background: #eaeaea;
+    color: #7a7a7a;
+    align-items: baseline;
+    #icon_location{
+        color: black;
+        font-size: 1.2em;
+        margin-left: 4rem;
+    }
+    .search_bar{
+        font-size: 1em;
+        font-weight: 700;
+        border: none;
+        background: #eaeaea;
+        padding: 18px 0;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    & :focus{
+        outline: none;
+    }
+}
+
+.hero{
+    text-align: center;
+    padding-bottom: 40px;
+    &_title{
+        font-weight: 700;
+        font-size: 1.5em;
+        margin: 40px 60px auto 60px;
+    }
+    &_text{
+        font-size: 1.1em;
+    }
+}

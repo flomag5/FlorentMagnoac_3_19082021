@@ -1,106 +1,3 @@
-/*-- location search */
-.location{
-    @include center-element;
-    width: 100%;
-    background: #eaeaea;
-    color: #7a7a7a;
-    align-items: baseline;
-    #icon_location{
-        color: black;
-        font-size: 1.2em;
-        margin-left: 4rem;
-    }
-    .search_bar{
-        font-size: 1em;
-        font-weight: 700;
-        border: none;
-        background: #eaeaea;
-        padding: 18px 0;
-        margin-left: 15px;
-        cursor: pointer;
-    }
-    & :focus{
-        outline: none;
-    }
-}
-
-.hero{
-    text-align: center;
-    padding-bottom: 40px;
-    &_title{
-        font-weight: 700;
-        font-size: 1.5em;
-        margin: 40px 60px auto 60px;
-    }
-    &_text{
-        font-size: 1.1em;
-    }
-}
-
-/*-- user notice guidelines --*/
-
-.user_notice{
-    padding: 10% 0;
-    background: white;
-    width: 100%;
-    @include center-element;
-    flex-direction: column;
-}
-.notice{
-    width: 95%;
-    padding: 0 ;   
-    display: flex;
-    flex-direction: column ;
-    &_title{
-        margin: 0;
-    }
-    &_steps{
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-        margin-top: 4%;
-    }
-    &_step{
-        display: flex;
-        align-items: center;
-        background: #f6f6f6;
-        height: auto;
-        width: auto;
-        margin: 13px 20px;
-        border-radius: 20px;
-        padding: 10px 0;
-        position: relative;
-        box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.15);
-        &:hover{
-            cursor: pointer;
-            background: lighten($color: $color-primary, $amount: 33%);
-            & > .step_icon{
-                    color: $color-primary;
-            }
-        }
-    }
-}
-
-.notice_step{
-    .step_number{
-        background-color: $color-primary;
-        color: white;
-        position: absolute;
-        padding: 3px 8px 3px 8px;
-        border: transparent 1px;
-        border-radius: 500px;
-        transform: translateX(-50%);
-    }
-    .step_icon{
-            color: #7e7e7e;
-            font-size: 120%;
-            margin: 0 25px 0 35px;
-        }   
-    .step_text{
-        font-weight: 700;
-    }
-    }
-
 /*-- restaurants --*/
     .restaurants{
         margin: 0;
@@ -169,11 +66,51 @@
         margin-left: 15px;
         line-height: 5px;
     }
-    &-heart{
+    &_heart{
         margin-right: 30px;
         font-size: 150%;
     }
     
 }
 
-/*-- responsive --*/
+/*-- heart animation --*/
+
+.fa-heart {
+    border: black;
+    background: white;
+    /*border-radius: 50%;
+    padding:.2em;*/
+}
+.fa-heart::before {
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: $color-primary;
+    cursor: pointer;
+}
+
+
+/*autre exemple
+
+<p><a class="jauge" href="#"><span class="jauge-remplissage"></span></a></p>
+.jauge {
+    width: 100px;
+    height: 200px;
+    display: block;
+    background-color: #303030;
+    position: relative;
+}
+.jauge-remplissage {
+    transition: all 0.3s linear 0s;
+    background-color: #33BEE5;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+ 
+.jauge:hover .jauge-remplissage {
+    height: 100%;
+}*/
