@@ -74,6 +74,7 @@ a:visited {
   background-size: 200%;
   color: white;
   border-radius: 50px;
+  border: none;
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
   display: block;
 }
@@ -84,77 +85,67 @@ a:visited {
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.8);
 }
 
-.spinner {
-  position: relative;
-  background: rgba(255, 255, 255, 0.8);
-  width: 100vw;
-  height: 100vh;
+/*.spinner{
+    position: absolute;
+    background: rgb(255,255,255,0.8);
+    width: 100vw;
+    height: 100vh;
+    .spinner_icon{
+        color: $color-primary;
+        font-size: 70px;
+        margin: auto;
+        position: absolute;
+        top: 50px; left: 50px; bottom: 50px; right: 50px;
+        animation: spin 15s forwards;
+        }
+    &_load{
+    width: 180px;
+    height: 180px;
+    border: 10px solid transparent;
+    border-top-color: $color-primary;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgb(255,255,255,0.8);
+    animation: spin 4s ease-out forwards;
 }
-.spinner .spinner_icon {
-  color: #9356DC;
-  font-size: 70px;
-  margin: auto;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  bottom: 50px;
-  right: 50px;
-  animation: spin 15s infinite;
+    &_load::after{
+    content: '';
+    position: absolute;
+    top: 5px; left: 5px; bottom: 5px; right: 5px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: $color-tertiary;
+    animation: spin 5s forwards;
 }
-.spinner_load {
-  width: 180px;
-  height: 180px;
-  border: 10px solid transparent;
-  border-top-color: #9356DC;
-  border-radius: 50%;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
-  animation: spin 4s infinite;
-}
-.spinner_load::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  bottom: 5px;
-  right: 5px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-top-color: #99E2D0;
-  animation: spin 5s infinite;
-}
-.spinner_load::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  border: 10px solid transparent;
-  border-top-color: #FF79DA;
-  animation: spin 8s infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  95% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: rotate(360deg);
-    visibility: hidden;
-    opacity: 0;
-  }
+    &_load::before{
+    content: '';
+    position: absolute;
+    top: 20px; left: 20px; bottom: 20px; right: 20px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: $color-secondary;
+    animation: spin 8s  forwards;
 }
 
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+}*/
 .header {
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -349,11 +340,6 @@ a:visited {
   font-size: 1.75em;
   padding: 0 25px;
 }
-#menu .menu_top .fa-heart {
-  font-size: 25px;
-  font-weight: 100;
-  padding: 0 35px;
-}
 
 .menu_bloc {
   display: grid;
@@ -504,6 +490,73 @@ a:visited {
 }
 .notice_step .step_text {
   font-weight: 700;
+}
+
+/*-- INDEX PAGE --*/
+@media screen and (min-width: 765px) {
+  .restaurants {
+    margin: 0 15px;
+  }
+
+  .restaurant_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 8px;
+  }
+
+  .notice_steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .notice_step {
+    width: 100%;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo logo logo logo";
+    justify-content: space-between;
+  }
+  .footer .logo {
+    grid-area: logo;
+  }
+  .footer-link {
+    justify-content: center;
+  }
+}
+/*-- MENU PAGES --*/
+@media screen and (min-width: 765px) {
+  .image_img {
+    margin: 0;
+  }
+
+  .menu_top {
+    margin-top: 52px;
+  }
+
+  .menu_bloc {
+    margin-top: 35px;
+  }
+
+  .menu_bloc_card {
+    display: grid;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas: "menu_bloc_title menu_bloc_title menu_bloc_title";
+  }
+
+  .menu_bloc_title {
+    grid-area: menu_bloc_title;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
