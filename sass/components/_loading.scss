@@ -1,4 +1,4 @@
-/*.spinner{
+.spinner{
     position: absolute;
     background: rgb(255,255,255,0.8);
     width: 100vw;
@@ -8,8 +8,8 @@
         font-size: 70px;
         margin: auto;
         position: absolute;
-        top: 50px; left: 50px; bottom: 50px; right: 50px;
-        animation: spin 15s forwards;
+        top: 50px; left: 60px; bottom: 50px; right: 50px;
+        animation: spin 15s 0.25s forwards;
         }
     &_load{
     width: 180px;
@@ -21,7 +21,10 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgb(255,255,255,0.8);
-    animation: spin 4s ease-out forwards;
+    animation: spin 4s 0.25s ease-out forwards;
+    &:hover{
+        animation-play-state: paused;
+    }
 }
     &_load::after{
     content: '';
@@ -30,7 +33,7 @@
     border-radius: 50%;
     border: 10px solid transparent;
     border-top-color: $color-tertiary;
-    animation: spin 5s forwards;
+    animation: spin 5s 0.25s forwards;
 }
     &_load::before{
     content: '';
@@ -39,7 +42,7 @@
     border-radius: 50%;
     border: 10px solid transparent;
     border-top-color: $color-secondary;
-    animation: spin 8s  forwards;
+    animation: spin 8s 0.25s forwards;
 }
 
 @keyframes spin {
@@ -58,4 +61,4 @@
         opacity: 0;
     }
 }
-}*/
+}
