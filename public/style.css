@@ -100,7 +100,6 @@ a:visited {
   bottom: 50px;
   right: 50px;
   animation: spin 15s infinite;
-  transform: rotate(-360deg);
 }
 .spinner_load {
   width: 180px;
