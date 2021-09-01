@@ -21,7 +21,7 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgb(255,255,255,0.8);
-    animation: spin 2s  infinite;
+    animation: spin 4s  infinite;
 }
     &_load::after{
     content: '';
@@ -45,20 +45,13 @@
 @keyframes spin {
     0%{
         transform: rotate(0deg);
+        opacity: 1;
+    }
+    95%{
+        opacity: 0.9;
     }
     100%{
         transform: rotate(360deg);
-    }
-}
-@keyframes spinner {
-    0%{
-        visibility: visible;
-        opacity: 1;
-    }
-    75%{
-        opacity: 1;
-    }
-    100%{
         visibility: hidden;
         opacity: 0;
     }

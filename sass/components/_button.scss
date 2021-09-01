@@ -14,10 +14,9 @@
    display: block;
    &:hover {
    background-position: right center; 
-   background: $button-search;
    color: #fff;
    text-decoration: none;
-   box-shadow: $button-shadow;
+   @include button-hover;
  }
 }
 }
