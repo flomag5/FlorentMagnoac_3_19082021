@@ -79,7 +79,7 @@
     
     /*-- menu animation --*/ 
 
-    .menu_dishes{
+    /*.menu_dishes{
        animation: opacity 1.5s both;
     }
 
@@ -121,6 +121,22 @@
     }
     .menu_dishes--10{
         animation-delay: 2.1s;
+    }*/
+$anim-delay: 200ms;
+
+    .menu_dishes{
+        animation: opacity 1.5s both;
+        @for $i from 1 through 10 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+     }
     }
-
-
+    @keyframes opacity {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
