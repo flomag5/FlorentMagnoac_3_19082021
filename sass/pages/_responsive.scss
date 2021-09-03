@@ -44,26 +44,27 @@
 
 /*-- MENU PAGES --*/
 
+@media screen and (min-width: 665px){
+    .menu{
+        margin-top: -80px;
+    }
+}
 @media screen and (min-width: 765px) {
+
+    .header{
+        &_icon{
+            left: 32%;
+        }
+    }
     .image_img{
         margin: 0;
     }
-    .menu_top{
-        margin-top: 52px;
+    .menu{
+        margin-top: -50px;
     }
-    .menu_bloc{
-        margin-top: 35px;
-    }
-    .menu_bloc_card{
+    .menu__grid{
         display: grid;
-        width: 100%;
-        grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1.5fr;
-        grid-template-areas:  
-        "menu_bloc_title menu_bloc_title menu_bloc_title";
+        grid-template-rows: 1fr;  
     }
-    .menu_bloc_title{
-        grid-area: menu_bloc_title;
-    }
-    }
+}

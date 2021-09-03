@@ -23,12 +23,13 @@
 
 .menu_button{
   @include center-element();
-  margin: 25px 0 60px 0;
+  margin: 45px 0 60px 0;
   &_order{
   background-image: linear-gradient(to left, $color-secondary 0%, $color-primary 70%, $color-secondary 100%);
   cursor: pointer;
   padding: 18px 60px;
   text-align: center;
+  font-size: 1em;
   transition: 0.5s;
   background-size: 200%;
   color: white;            

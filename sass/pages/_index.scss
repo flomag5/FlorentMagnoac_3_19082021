@@ -38,13 +38,11 @@
             position: absolute;
             background-color: $color-tertiary;
             top: 20px; right: 10px;
-            
                 color: #008766;
                 font-size: 0.9em;
                 font-weight: 700;
                 padding: 6px 13px;
                 margin: 0;
-          
         }
         &:hover {
             transition: 0.4s;
@@ -70,21 +68,6 @@
 
 /*-- heart animation --*/
 
-/*.fa-heart {
-    border: black;
-    background: transparent;
-    
-}
-.fa-heart::before {
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-   color: $color-primary;
-   cursor: pointer;
-}
-*/
- /* -- autre test --*/
  .fa-heart{	
       display:flex;
       font-size: 1.8em;
@@ -92,13 +75,13 @@
       -webkit-text-stroke:2px black;
       opacity:0.4;
       margin-right: 30px;
-  
   }
   
   .fa-heart:hover{
       background:linear-gradient(#FF79DA, #9356DC);
       -webkit-background-clip: text;
-      background-clip: text;
+      
+      -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 0px;
       opacity:1;
       transition: all 1.8s ease-in-out;  
