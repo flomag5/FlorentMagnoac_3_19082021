@@ -337,6 +337,10 @@ body {
   object-fit: cover;
 }
 
+.menu_top .fa-heart {
+  margin-right: 5px;
+}
+
 #menu {
   background: white;
   width: 100%;
@@ -499,7 +503,7 @@ body {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(1);
   }
 }
 @keyframes rotate {

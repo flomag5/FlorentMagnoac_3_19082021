@@ -11,6 +11,11 @@ body {
         object-fit: cover;
     }
 }
+.menu_top{
+    .fa-heart{
+        margin-right: 5px;
+    }
+}
 #menu {
     background: white;
     width: 100%;
@@ -153,7 +158,7 @@ $anim-delay: 200ms;
         }
         100% {
          
-                  transform: scaleX(-50px);
+                  transform: scaleX(1);
         }
       }
 
