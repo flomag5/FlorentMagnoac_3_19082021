@@ -1,18 +1,17 @@
 .spinner{
-    
     position: fixed;
     background-color: white;
     width: 100vw;
     height: 100vh;
     z-index: 20;
-    animation: spin-background 4s ease-out forwards;
+    animation: spin-background 3.5s ease-out forwards;
     .spinner_icon{
         color: $color-primary;
         font-size: 70px;
         margin: auto;
         position: absolute;
         top: 50px; left: 60px; bottom: 50px; right: 50px;
-        animation: spin 10s 0.25s forwards;
+        animation: spin 10s 0.3s forwards;
         }
     &_load{
     width: 180px;
@@ -24,9 +23,8 @@
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgb(255,255,255,0.8);
-    animation: spin 4s 0.25s ease-out forwards;
+    animation: spin 3.5s 0.3s  forwards;
     z-index: 10;
-    
     &:hover{
         animation-play-state: paused;
     }
@@ -38,7 +36,7 @@
     border-radius: 50%;
     border: 10px solid transparent;
     border-top-color: $color-tertiary;
-    animation: spin 5s 0.25s forwards;
+    animation: spin 5s 0.3s forwards;
 }
     &_load::before{
     content: '';
@@ -47,7 +45,7 @@
     border-radius: 50%;
     border: 10px solid transparent;
     border-top-color: $color-secondary;
-    animation: spin 8s 0.25s forwards;
+    animation: spin 8s 0.3s forwards;
 }
 
 @keyframes spin {
@@ -60,7 +58,7 @@
         opacity: 1;
     }
     99%{
-        opacity: 0.8;
+        opacity: 0.7;
     }
     100%{
         transform: rotate(360deg);
@@ -72,6 +70,9 @@
     0%{
         visibility: visible;
         opacity: 1;
+    }
+    90%{
+        opacity: 0.7;
     }
     100%{
         visibility: hidden;

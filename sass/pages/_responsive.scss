@@ -1,6 +1,6 @@
 /*-- INDEX PAGE --*/
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 735px) {
     .restaurants{
         margin: 0 15px;
     }
@@ -38,6 +38,14 @@
         }
         &-link{
             justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .restaurant{
+        &_items{
+            grid-gap: 45px;
         }
     }
 }
