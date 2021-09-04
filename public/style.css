@@ -521,66 +521,6 @@ body {
   align-items: center;
 }
 
-/*-- menu animation --*/
-.menu__grid__case {
-  animation: opacity 1.5s both;
-}
-.menu__grid__case--1 {
-  animation-delay: 200ms;
-}
-.menu__grid__case--2 {
-  animation-delay: 400ms;
-}
-.menu__grid__case--3 {
-  animation-delay: 600ms;
-}
-.menu__grid__case--4 {
-  animation-delay: 800ms;
-}
-.menu__grid__case--5 {
-  animation-delay: 1000ms;
-}
-.menu__grid__case--6 {
-  animation-delay: 1200ms;
-}
-.menu__grid__case--7 {
-  animation-delay: 1400ms;
-}
-.menu__grid__case--8 {
-  animation-delay: 1600ms;
-}
-.menu__grid__case--9 {
-  animation-delay: 1800ms;
-}
-.menu__grid__case--10 {
-  animation-delay: 2000ms;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/*-- checkbox animation --*/
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*-- location search */
 .location {
   display: flex;
