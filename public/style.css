@@ -726,8 +726,10 @@ body {
 }
 @media screen and (min-width: 980px) {
   .restaurant_items {
-    width: 100%;
-    grid-gap: 45px;
+    grid-gap: 65px;
+  }
+  .restaurant_item {
+    width: 115%;
   }
 }
 /*-- MENU PAGES --*/

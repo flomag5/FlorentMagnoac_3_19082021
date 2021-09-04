@@ -45,7 +45,10 @@
 @media screen and (min-width: 980px) {
     .restaurant{
         &_items{
-            grid-gap: 45px;
+            grid-gap: 65px;
+        }
+        &_item{
+            width: 115%;
         }
     }
 }
