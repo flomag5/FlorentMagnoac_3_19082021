@@ -11,7 +11,6 @@
 .fa-heart:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
-  background-clip: "";
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
   opacity: 1;
@@ -172,7 +171,7 @@ a:visited {
   width: 100vw;
   height: 100vh;
   z-index: 20;
-  animation: spin-background 3.5s ease-out forwards;
+  animation: spin-background 3s ease-out forwards;
 }
 .spinner .spinner_icon {
   color: #9356DC;
@@ -198,7 +197,7 @@ a:visited {
   right: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0.8);
-  animation: spin 3.5s 0.3s forwards;
+  animation: spin 3s 0.3s forwards;
   z-index: 10;
 }
 .spinner_load:hover {
@@ -238,7 +237,7 @@ a:visited {
     opacity: 1;
   }
   99% {
-    opacity: 0.7;
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);

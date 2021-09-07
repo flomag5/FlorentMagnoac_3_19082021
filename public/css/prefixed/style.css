@@ -78,11 +78,9 @@ a:visited {
 }
 .hero_button-sub:hover {
   background-position: right center;
-  background: lighten #FF79DA, 20%;
   color: #fff;
   text-decoration: none;
-  -webkit-box-shadow: darken #d3d3d3, 50%;
-          box-shadow: darken #d3d3d3, 50%;
+  
 }
 
 .menu_button {
@@ -415,65 +413,13 @@ a:visited {
 }
 
 /*-- heart animation --*/
-/*.fa-heart {
-    border: black;
-    background: white;
 
-}
-.fa-heart::before {
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-   color: $color-primary;
-   cursor: pointer;
-}
-*/
-/*-- autre test--
-.heart{ 
-    position:absolute;
-    margin-bottom: 5%;
-    margin-left:88%;
-   & .fa-heart{
-        position:absolute;
-        background:white;
-        font-size:1.8rem;  
-        color: grey;
-        }
-  & .fa-gradient{
-    background-color:white; 
-    width:35px;
-    height:30px;
-  }
-  & .fa-gradient:hover{
-            cursor:pointer; 
-            font-weight:bold;
-            animation: background-heart 1.2s  ;
-            background:$color-heart;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-  } 
-  @keyframes background-heart{
-    0%{
-      opacity:0;
-    }
-    50%{
-      opacity:0.5;
-    }
-    100%{
-      opacity:1;
-    }
-  }*/
-/* -- autre test --*/
 .fa-heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 3em;
   color: transparent;
-  /*-webkit-text-stroke:2px black;*/
   opacity: 0.2;
 }
 
@@ -481,9 +427,8 @@ a:visited {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: -o-linear-gradient(#FF79DA, #9356DC);
   background: linear-gradient(#FF79DA, #9356DC);
-  /*-webkit-background-clip: text;*/
   -webkit-background-clip: text;
-          background-clip: text;
+          
   /*-webkit-text-stroke: 0px;*/
   opacity: 1;
   -webkit-transition: all 2s ease-in-out;
