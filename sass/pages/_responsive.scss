@@ -53,6 +53,17 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .restaurant{
+        &_items{
+            grid-gap: 75px;
+        }
+        &_item{
+            width: 500px;
+        }
+    }
+}
+
 /*-- MENU PAGES --*/
 
 @media screen and (min-width: 665px){

@@ -495,20 +495,25 @@ body {
   animation: rotate 0.5s both;
 }
 .menu__case__dish {
-  margin-left: 20px;
+  margin-left: 10px;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 22px;
 }
 .menu__case__dish p {
   margin: 0;
+  font-size: 0.85em;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu__case__dish-title {
   font-weight: bold;
+  font-size: 1.25em;
 }
 .menu__case__price {
-  padding-right: 20px;
+  font-size: 0.95em;
+  padding-right: 18px;
+  padding-top: 25px;
   font-weight: bold;
   padding-left: 7px;
 }
@@ -669,6 +674,14 @@ body {
   }
   .restaurant_item {
     width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurant_items {
+    grid-gap: 75px;
+  }
+  .restaurant_item {
+    width: 500px;
   }
 }
 /*-- MENU PAGES --*/

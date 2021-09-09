@@ -100,20 +100,25 @@ body {
     }
     &__case {
         &__dish {
-            margin-left: 20px;
+            margin-left: 10px;
             white-space: nowrap;
             overflow: hidden;
+            line-height: 22px;
             & p {
                 margin: 0;
+                font-size: 0.85em;
                 text-overflow: ellipsis;
                 overflow: hidden;
             }
             &-title {
                 font-weight: bold;
+                font-size: 1.25em;
             }
         }
         &__price {
-            padding-right: 20px;
+            font-size: 0.95em;
+            padding-right: 18px;
+            padding-top: 25px;
             font-weight: bold;
             padding-left: 7px;
         }
