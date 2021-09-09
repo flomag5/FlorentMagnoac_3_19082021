@@ -668,13 +668,13 @@ body {
     grid-gap: 65px;
   }
   .restaurant_item {
-    width: 115%;
+    width: 400px;
   }
 }
 /*-- MENU PAGES --*/
 @media screen and (min-width: 665px) {
-  .menu {
-    margin-top: -80px;
+  #menu {
+    margin-top: 130px;
   }
 }
 @media screen and (min-width: 765px) {

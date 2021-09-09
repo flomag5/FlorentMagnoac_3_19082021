@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/style.css",
-    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/css/prefixed/",
-    "prod":"sass --watch ./sass/main.scss:./public/style.css && postcss ./public/style.css --use autoprefixer -d ./public/css"
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/",
+    "prod":"sass  ./sass/main.scss:./public/style.css && postcss ./public/style.css --use autoprefixer -d ./public/"
   },
   "repository": {
     "type": "git",
